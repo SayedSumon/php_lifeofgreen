@@ -1,0 +1,499 @@
+@import url('components.css');
+
+.dashboard .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap: 1.5rem;
+   align-items: flex-start;
+}
+
+.dashboard .box-container .box {
+   padding: 1.5rem;
+   text-align: center;
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   background-color: var(--white);
+   border-radius: .5rem;
+}
+
+.dashboard .box-container .box h3 {
+   font-size: 3.5rem;
+   color: var(--black);
+}
+
+.dashboard .box-container .box p {
+   font-size: 2rem;
+   background-color: var(--light-bg);
+   color: var(--light-color);
+   padding: 1.5rem;
+   margin: 1rem 0;
+   border: var(--border);
+   border-radius: .5rem;
+   color: var(--black);
+}
+
+.add-products form {
+   max-width: 70rem;
+   padding: 2rem;
+   margin: 0 auto;
+   text-align: center;
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   background-color: var(--white);
+   border-radius: .5rem;
+}
+
+.add-products form .flex {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.add-products form .flex .inputBox {
+   width: 49%;
+}
+
+.add-products form .box {
+   width: 100%;
+   margin: 1rem 0;
+   padding: 1.2rem 1.4rem;
+   font-size: 1.8rem;
+   color: var(--black);
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   border: var(--border);
+}
+
+.add-products form textarea {
+   height: 20rem;
+   resize: none;
+}
+
+.show-products {
+   padding-top: 0;
+}
+
+.show-products .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap: 1.5rem;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.show-products .box-container .box {
+   text-align: center;
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   background-color: var(--white);
+   border-radius: .5rem;
+   padding: 2rem;
+   position: relative;
+}
+
+.show-products .box-container .box .price {
+   position: absolute;
+   top: 1rem;
+   left: 1rem;
+   padding: 1rem;
+   font-size: 2rem;
+   color: var(--white);
+   background-color: var(--red);
+   border-radius: .5rem;
+}
+
+.show-products .box-container .box img {
+   width: 100%;
+   margin-bottom: 1rem;
+}
+
+.show-products .box-container .box .name {
+   margin: .5rem 0;
+   font-size: 2rem;
+   color: var(--black);
+}
+
+.show-products .box-container .box .cat {
+   font-size: 1.8rem;
+   color: var(--green);
+}
+
+.show-products .box-container .box .details {
+   padding-top: 1rem;
+   font-size: 1.5rem;
+   line-height: 1.5;
+   color: var(--light-color);
+}
+
+.update-product form {
+   max-width: 50rem;
+   padding: 2rem;
+   margin: 0 auto;
+   text-align: center;
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   background-color: var(--white);
+   border-radius: .5rem;
+}
+
+.update-product form img {
+   height: 25rem;
+   object-fit: cover;
+   margin-bottom: 1rem;
+}
+
+.update-product form .box {
+   width: 100%;
+   border: var(--border);
+   background-color: var(--white);
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   padding: 1.2rem 1.4rem;
+   font-size: 1.8rem;
+   color: var(--black);
+   margin: 1rem 0;
+}
+
+.add-blog form {
+   max-width: 70rem;
+   margin: 0 auto;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border: var(--border);
+   border-radius: .5rem;
+   padding: 2rem;
+   text-align: center;
+}
+
+.add-blog form .inputBox {
+   text-align: left;
+}
+
+.add-blog form .inputBox img {
+   width: 100%;
+}
+
+.add-blog form .inputBox span {
+   display: block;
+   padding-top: 1rem;
+   font-size: 1.8rem;
+   color: var(--light-color);
+}
+
+.add-blog form .inputBox .box {
+   width: 100%;
+   padding: 1.2rem 1.4rem;
+   font-size: 1.8rem;
+   color: var(--black);
+   border: var(--border);
+   border-radius: .5rem;
+   margin: 1rem 0;
+   background-color: var(--light-bg);
+}
+
+.placed-orders .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap: 1.5rem;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.placed-orders .box-container .box {
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   background-color: var(--white);
+   border-radius: .5rem;
+   padding: 2rem;
+}
+
+.placed-orders .box-container .box p {
+   margin-bottom: 1rem;
+   line-height: 1.5;
+   font-size: 2rem;
+   color: var(--light-color);
+}
+
+.placed-orders .box-container .box p span {
+   color: var(--green);
+}
+
+.placed-orders .box-container .box .drop-down {
+   width: 100%;
+   padding: 1.2rem 1.4rem;
+   font-size: 1.8rem;
+   border: var(--border);
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   margin-bottom: .5rem;
+}
+
+
+.messages .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap: 1.5rem;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.messages .box-container .box {
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   background-color: var(--white);
+   border-radius: .5rem;
+   padding: 2rem;
+}
+
+.messages .box-container .box p {
+   line-height: 1.5;
+   padding: .5rem 0;
+   font-size: 2rem;
+   color: var(--light-color);
+}
+
+.messages .box-container .box p span {
+   color: var(--green);
+}
+
+.user-accounts .add_user {
+   width: 200px;
+   padding: 1rem 1rem;
+   font-size: 1.5rem;
+}
+
+.user-accounts .add_user i {
+   color: var(--white);
+}
+
+.table-content {
+   margin-top: 20px;
+}
+
+.table-content table {
+   border-collapse: collapse;
+   width: 100%;
+   font-size: 1.5rem;
+}
+
+.table-content thead {
+   border-bottom: 1px solid black;
+}
+
+.table-content th,
+td {
+   text-align: left;
+   padding: 10px;
+}
+
+
+.table-content td img {
+   width: 70px;
+   height: 70px;
+
+   border-radius: 50%;
+}
+
+.table-content th:nth-child(6),
+td:nth-child(6) {
+   text-align: center;
+}
+
+.table-content th:nth-child(7),
+td:nth-child(7) {
+   text-align: center;
+}
+
+.table-content tr .edit_btn i:hover {
+   color: green;
+}
+
+.table-content tr .view_btn i:hover {
+   color: green;
+}
+
+.table-content tr .delete_btn i:hover {
+   color: red;
+}
+
+.table-content tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+.view-blog {
+   padding: 15px;
+}
+
+.view-blog h1 {
+   border-bottom: 1px solid #d1cfcf;
+}
+
+.view-blog .blog-container h2 {
+   text-transform: capitalize;
+   color: green;
+   font-size: 3rem;
+   font-weight: 500;
+   margin-top: 5rem;
+}
+
+.view-blog .blog_edit_btn {
+   width: 200px;
+   padding: 1rem 1rem;
+   font-size: 1.5rem;
+}
+
+.view-blog .option-btn {
+   width: 200px;
+   padding: 1rem 1rem;
+   font-size: 1.5rem;
+}
+
+.view-blog .blog_edit_btn i {
+   color: var(--white);
+}
+
+
+.view-blog .blog-container {
+   font-size: 1.5rem;
+}
+
+
+
+.view-blog .blog-container .blog_image img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   border: 1px solid #d1cfcf;
+   border-radius: 3%;
+   padding: 15px;
+}
+
+.view-blog .blog-container .description {
+   margin: 5rem 0;
+}
+
+.view-blog .blog-container .author p{
+   font-style: italic;
+   font-weight: 500;
+   color: green;
+   margin-bottom: 5rem;
+}
+
+.advisor_messages {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.advisor_message-container {
+   box-shadow: var(--box-shadow);
+   border-radius: .5rem;
+   background-color: var(--white);
+   width: 50rem;
+   height: 80vh;
+   animation: fadeIn .2s linear;
+}
+
+.advisor_message-container .userList {
+   padding: 2rem;
+}
+
+.advisor_message-container .userList .user {
+   display: flex;
+   padding: 1rem;
+   margin: 1rem;
+   font-size: 1.3rem;
+   cursor: pointer;
+   box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+      inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+
+.advisor_message-container .userList .user:hover {
+   background-color: #f2f2f2;
+}
+
+.advisor_message-container .userList .user:hover .date_remove .delete_btn i {
+   display: block;
+}
+
+.advisor_message-container .userList .user .info {
+   display: flex;
+   margin-right: 1rem;
+   width: 80%;
+}
+
+.advisor_message-container .userList .user .info img {
+   width: 50px;
+   height: 50px;
+   border-radius: 5px;
+   margin-right: 1rem;
+}
+
+.advisor_message-container .userList .user .info .mssg {
+   overflow: hidden;
+}
+
+.advisor_message-container .userList .user .date_remove {
+   text-align: end;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.advisor_message-container .userList .user .date_remove .date,
+.delete_btn i {
+   color: var(--light-color);
+}
+
+.advisor_message-container .userList .user .date_remove .delete_btn i {
+   display: none;
+   cursor: pointer;
+}
+
+.advisor_message-container .userList .user .date_remove .delete_btn i:hover {
+   color: red;
+}
+
+.advisor_message-container .userList .user .date_remove .date {
+   padding-bottom: 10px;
+}
+
+.advisor_message-container .userList .no_advisor {
+   font-size: 2rem;
+   text-align: center;
+}
+
+
+
+@media (max-width:768px) {
+
+   .add-products form .flex .inputBox {
+      width: 100%;
+   }
+
+}
+
+
+
+@media (max-width:450px) {
+
+   .show-products .box-container {
+      grid-template-columns: 1fr;
+   }
+
+   .update-product form img {
+      height: auto;
+      width: 100%;
+   }
+
+   .placed-orders .box-container {
+      grid-template-columns: 1fr;
+   }
+
+
+   .messages .box-container {
+      grid-template-columns: 1fr;
+   }
+
+}
